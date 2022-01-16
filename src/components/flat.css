@@ -1,5 +1,9 @@
 .flat {
+  flex-basis: calc(50% - 20px);
   margin: 10px;
+}
+.flat:hover {
+  opacity: 0.9;
 }
 .flat-picture {
   height: 180px;
@@ -8,5 +12,4 @@
 }
 .flat-title {
   margin-top: 10px;
-  font-weight: bold;
 }

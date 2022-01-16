@@ -4,8 +4,6 @@ import "./flat.css";
 // const flat = { name: "Great flat", price: 100, }
 // <Flat flat={flat} />
 
-
-
 class Flat extends React.Component {
   render() {
 
@@ -17,7 +15,7 @@ class Flat extends React.Component {
     };
 
     return (
-      <div className="flat">
+      <div className="flats">
         <div className="flat-picture" style={style}></div>
         <div className="flat-title"></div>
         {title}
