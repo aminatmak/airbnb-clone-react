@@ -5,6 +5,11 @@ import "./flat.css";
 // <Flat flat={flat} />
 
 class Flat extends React.Component {
+  handleClick = () => {
+    // Calling the parent method selectFlat
+    this.props.selectFlat(this.props.flat)
+  }
+
   render() {
 
     const title = this.props.flat.price + this.props.flat.priceCurrency + " - " + this.props.flat.name;
@@ -15,7 +20,7 @@ class Flat extends React.Component {
     };
 
     return (
-      <div className="flats">
+      <div className="flats" onClick={this.handleClick}>
         <div className="flat-picture" style={style}></div>
         <div className="flat-title"></div>
         {title}
